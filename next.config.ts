@@ -118,6 +118,9 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "noirandblancnyc.kinsta.cloud" },
       { protocol: "https", hostname: "**.amazonaws.com" },
       { protocol: "https", hostname: "**.judge.me" },
+      { protocol: "https", hostname: "cdn.sanity.io" },
+      { protocol: "https", hostname: "marque.media" },
+      { protocol: "https", hostname: "**.marque.media" },
     ],
   },
 

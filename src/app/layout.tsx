@@ -5,7 +5,6 @@ import "./globals.css";
 import MetaPixel from "@/components/MetaPixel";
 import GoogleTag from "@/components/GoogleTag";
 import StructuredData from "@/components/StructuredData";
-import Klaviyo from "@/components/Klaviyo";
 import { Analytics } from "@vercel/analytics/next";
 
 const GA4_ID = "GT-PHCH4QPC";
@@ -30,19 +29,19 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   title: {
     template: "%s | Hike Footwear",
-    default: "Luxury Handbags, Exclusive Drops & Special Offers | Hike Footwear",
+    default: "Healthy Barefoot Shoes | 2M+ Lives Improved | Hike Footwear",
   },
   description:
-    "Discover Hike Footwear luxury handbags collection. Sign up for our newsletter to be the first to know about exclusive drops, special offers, and limited product launches. Elevate your style with our timeless, meticulously crafted handbags. Shop the latest trends at Hike Footwear.",
-  keywords: ["luxury handbags", "designer bags", "crossbody bags", "leather bags", "Hike Footwear", "women's handbags"],
+    "Discover Hike Footwear — premium barefoot shoes designed for natural foot health. Wide toe box, zero-drop sole, ultra-flexible material. Improving 2M+ lives worldwide. Shop barefoot shoes, boots, hiking shoes and kids shoes.",
+  keywords: ["barefoot shoes", "barefoot boots", "zero drop shoes", "wide toe box shoes", "hiking shoes", "Hike Footwear", "foot health"],
   verification: {
     google: "h0lN5S8mG5esv4PyJ2sZ_LNA3v_-0AuH1BkDsrxa5oI",
   },
   openGraph: {
     siteName: "Hike Footwear",
-    title: "Luxury Handbags, Exclusive Drops & Special Offers | Hike Footwear",
+    title: "Healthy Barefoot Shoes | 2M+ Lives Improved | Hike Footwear",
     description:
-      "Discover Hike Footwear luxury handbags collection. Sign up for our newsletter to be the first to know about exclusive drops, special offers, and limited product launches. Elevate your style with our timeless, meticulously crafted handbags. Shop the latest trends at Hike Footwear.",
+      "Discover Hike Footwear — premium barefoot shoes designed for natural foot health. Wide toe box, zero-drop sole, ultra-flexible. Shop barefoot shoes, boots, hiking shoes and kids shoes.",
     url: "https://hike-footwear-six.vercel.app",
     type: "website",
     images: [
@@ -57,9 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Luxury Handbags, Exclusive Drops & Special Offers | Hike Footwear",
+    title: "Healthy Barefoot Shoes | 2M+ Lives Improved | Hike Footwear",
     description:
-      "Discover Hike Footwear luxury handbags collection. Sign up for our newsletter to be the first to know about exclusive drops, special offers, and limited product launches. Elevate your style with our timeless, meticulously crafted handbags. Shop the latest trends at Hike Footwear.",
+      "Discover Hike Footwear — premium barefoot shoes designed for natural foot health. Wide toe box, zero-drop sole, ultra-flexible. Shop barefoot shoes, boots, hiking shoes and kids shoes.",
     images: ["/og-image.jpg"],
   },
   icons: {
@@ -84,7 +83,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <StructuredData />
         <MetaPixel />
         <GoogleTag />
-        <Klaviyo />
         {children}
         <Analytics />
       </body>

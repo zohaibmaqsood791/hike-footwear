@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-heading: var(--font-heading, "Raleway", sans-serif);
+  --font-body: var(--font-body, "Poppins", sans-serif);
+
+  --color-noir: #0a0a0a;
+  --color-blanc: #ffffff;
+  --color-ivory: #f9f7f4;
+  --color-stone: #8c8780;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, a, [role="button"], label[for], select {
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--font-body), "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), "Raleway", sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-heading), "Raleway", sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), "Poppins", sans-serif;
+}
+
+/* Checkout field labels: light weight so they don't look bold */
+.checkout-font .field-label {
+  font-weight: 300;
+  color: #999;
+}
+
+/* Apple Pay button — only renders in Safari/WebKit */
+.apple-pay-button {
+  -webkit-appearance: -apple-pay-button;
+  -apple-pay-button-type: plain;
+  -apple-pay-button-style: black;
+  display: block;
+  width: 100%;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Remove Square Google Pay iframe border */
+#sq-google-pay iframe,
+#sq-google-pay button,
+#sq-google-pay > * {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Klaviyo teaser — keep small and behind cart drawer */
+.needsclick.kl-teaser-Uz2Z66 {
+  max-width: 120px !important;
+  margin-left: 0 !important;
+  z-index: 49 !important;
+}
+
+/* Customer marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 2px;
+}

@@ -1,0 +1,23 @@
+export async function logDebug(event: string, email?: string, data?: any) {
+  const logData = {
+    event,
+    email,
+    data,
+    timestamp: new Date().toISOString(),
+    url: typeof window !== 'undefined' ? window.location.pathname : '',
+  };
+
+  // Log to console
+  console.log(`[DEBUG] ${event}:`, logData);
+
+  // Send to WordPress dashboard logs table
+  try {
+    await fetch('https://marque.media/wp-json/nb/v1/log', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(logData),
+    });
+  } catch (e) {
+    console.error('Failed to send log to WordPress:', e);
+  }
+}

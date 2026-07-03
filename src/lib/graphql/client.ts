@@ -6,6 +6,7 @@ export const graphqlClient = new GraphQLClient(endpoint, {
   headers: {
     "Content-Type": "application/json",
   },
+  fetch: (url, options) => fetch(url, { ...options, cache: "no-store" }),
 });
 
 export const authClient = new GraphQLClient(endpoint, {

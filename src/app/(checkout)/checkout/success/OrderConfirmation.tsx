@@ -259,8 +259,8 @@ export default function OrderConfirmation({
             <div className="bg-white rounded-xl p-5 text-center">
               <p className="text-xs text-neutral-500">
                 Questions? Email us at{" "}
-                <a href="mailto:hello@hike-footwear.vercel.app" className="underline text-neutral-700">
-                  hello@hike-footwear.vercel.app
+                <a href="mailto:hello@hikefootwear.com" className="underline text-neutral-700">
+                  hello@hikefootwear.com
                 </a>
               </p>
             </div>

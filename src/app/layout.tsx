@@ -25,7 +25,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hike-footwear.vercel.app"),
+  metadataBase: new URL("https://hike-footwear-six.vercel.app"),
   // Main headless storefront for Hike Footwear
   robots: { index: true, follow: true },
   title: {
@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     title: "Luxury Handbags, Exclusive Drops & Special Offers | Hike Footwear",
     description:
       "Discover Hike Footwear luxury handbags collection. Sign up for our newsletter to be the first to know about exclusive drops, special offers, and limited product launches. Elevate your style with our timeless, meticulously crafted handbags. Shop the latest trends at Hike Footwear.",
-    url: "https://hike-footwear.vercel.app",
+    url: "https://hike-footwear-six.vercel.app",
     type: "website",
     images: [
       {
-        // Relative path resolves against metadataBase (hike-footwear.vercel.app), served by Vercel
+        // Relative path resolves against metadataBase (hike-footwear-six.vercel.app), served by Vercel
         url: "/og-image.jpg",
         width: 1200,
         height: 630,

@@ -280,7 +280,7 @@ export async function POST(req: NextRequest) {
       fbp,
       fbc,
       externalId,
-      eventSourceUrl: `https://hike-footwear.vercel.app/checkout/success`,
+      eventSourceUrl: `https://hike-footwear-six.vercel.app/checkout/success`,
     });
 
     // ── 5. Klaviyo Placed Order (fire-and-forget) ─────────────────────────

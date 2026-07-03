@@ -8,9 +8,9 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ["/account", "/checkout", "/api/"],
     },
     sitemap: [
-      "https://hike-footwear.vercel.app/sitemap.xml",
-      "https://hike-footwear.vercel.app/sitemap-products.xml",
-      "https://hike-footwear.vercel.app/sitemap-collections.xml",
+      "https://hike-footwear-six.vercel.app/sitemap.xml",
+      "https://hike-footwear-six.vercel.app/sitemap-products.xml",
+      "https://hike-footwear-six.vercel.app/sitemap-collections.xml",
     ],
   };
 }

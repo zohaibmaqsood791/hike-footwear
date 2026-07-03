@@ -272,8 +272,8 @@ export default function TrackOrderPage() {
             {/* Help */}
             <p className="text-center text-xs text-neutral-400">
               Need help?{" "}
-              <a href="mailto:hello@hike-footwear.vercel.app" className="underline text-neutral-600">
-                hello@hike-footwear.vercel.app
+              <a href="mailto:hello@hikefootwear.com" className="underline text-neutral-600">
+                hello@hikefootwear.com
               </a>
             </p>
           </div>

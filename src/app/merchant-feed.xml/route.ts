@@ -8,7 +8,7 @@ import { gql } from "graphql-request";
 
 export const revalidate = 3600; // cache 1h
 
-const SITE = "https://hike-footwear.vercel.app";
+const SITE = "https://hike-footwear-six.vercel.app";
 const BRAND = "Hike Footwear";
 const DEFAULT_GENDER = "female";
 const DEFAULT_AGE_GROUP = "adult";

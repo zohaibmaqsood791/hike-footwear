@@ -54,8 +54,8 @@ export default function ContactPage() {
                 <Mail size={20} className="mt-0.5 text-neutral-400 shrink-0" />
                 <div>
                   <p className="text-sm font-medium">Email</p>
-                  <a href="mailto:hello@hike-footwear.vercel.app" className="text-sm text-neutral-500 hover:text-black transition-colors">
-                    hello@hike-footwear.vercel.app
+                  <a href="mailto:hello@hikefootwear.com" className="text-sm text-neutral-500 hover:text-black transition-colors">
+                    hello@hikefootwear.com
                   </a>
                 </div>
               </div>

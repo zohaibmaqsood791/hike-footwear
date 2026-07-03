@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 // Register a domain for Apple Pay with Square.
-// Call once per live domain: /api/square/register-apple-pay?domain=hike-footwear.vercel.app
+// Call once per live domain: /api/square/register-apple-pay?domain=hike-footwear-six.vercel.app
 export async function GET(req: NextRequest) {
   const accessToken = process.env.SQUARE_ACCESS_TOKEN;
   const isSandbox = process.env.SQUARE_ENVIRONMENT !== "production";
@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
     ? "https://connect.squareupsandbox.com"
     : "https://connect.squareup.com";
 
-  const domain = req.nextUrl.searchParams.get("domain") || "hike-footwear.vercel.app";
+  const domain = req.nextUrl.searchParams.get("domain") || "hike-footwear-six.vercel.app";
 
   const res = await fetch(`${base}/v2/apple-pay/domains`, {
     method: "POST",

@@ -108,7 +108,7 @@ export default function Footer() {
             {/* Brand col */}
             <div className="lg:col-span-2">
               <Image
-                src="https://hike-footwear.vercel.app/cdn/shop/files/Group_1171277502_2.svg"
+                src="https://hike-footwear-six.vercel.app/cdn/shop/files/Group_1171277502_2.svg"
                 alt="Hike Footwear"
                 width={130}
                 height={38}
@@ -121,8 +121,8 @@ export default function Footer() {
               <p className="text-neutral-400 text-sm mb-1">
                 <strong className="text-white">Monday – Friday</strong>, 9 AM – 5 PM EST
               </p>
-              <a href="mailto:hello@hike-footwear.vercel.app" className="text-neutral-300 text-sm hover:text-white transition-colors">
-                ✉ hello@hike-footwear.vercel.app
+              <a href="mailto:hello@hikefootwear.com" className="text-neutral-300 text-sm hover:text-white transition-colors">
+                ✉ hello@hikefootwear.com
               </a>
 
               {/* Socials */}

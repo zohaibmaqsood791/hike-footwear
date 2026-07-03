@@ -40,15 +40,13 @@ async function getCategories() {
   }
 }
 
-// Display order on the shop grid: Crossbody bags → other bags → wallets → straps.
-// (Strap is checked first so "crossbody strap" sorts as a strap, not a bag.)
 function shopOrder(p: Product): number {
   const cats = (p.productCategories?.nodes ?? []).map((c) => `${c.slug} ${c.name}`).join(" ");
   const hay = `${cats} ${p.name}`.toLowerCase();
-  if (/strap/.test(hay)) return 3;
-  if (/wallet|purse/.test(hay)) return 2;
-  if (/cross[\s-]?body/.test(hay)) return 0;
-  return 1; // other bags (totes, backpacks, duffels, etc.)
+  if (/kid|children/.test(hay)) return 3;
+  if (/boot/.test(hay)) return 2;
+  if (/hiking/.test(hay)) return 1;
+  return 0; // barefoot shoes first
 }
 
 export default async function ShopPage({ searchParams }: PageProps) {
@@ -67,7 +65,7 @@ export default async function ShopPage({ searchParams }: PageProps) {
     : currentCategory?.name ?? "All Products";
 
   return (
-    <div style={{ backgroundColor: "#F8FAF8" }} className="min-h-screen">
+    <div style={{ backgroundColor: "#FAF7F4" }} className="min-h-screen">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
 
         {/* Breadcrumb */}
